@@ -1,5 +1,85 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+}
+:root {
+  --BLUE-ACCENT: #4c5fd5;
+  --WHITE-ACCENT: #dadbf1;
+  --BLACK: #000000;
+  --WHITE: #fff;
+}
+body {
+  width: 100%;
+}
+header {
+  background-color: var(--BLACK);
+  color: var(--WHITE);
+  padding: 1.5rem;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+}
+.logo-help {
+  display: flex;
+  column-gap: 1rem;
+}
+.abstract-logo {
+}
+.help-center {
+  border-left: 2px solid white;
+  padding: 0 0 0 5px;
+}
+.help-center h1 {
+  font-size: 24px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+.abstract-logo {
+  width: 126px;
+  height: 32px;
+}
+.search-hamburger {
+  display: flex;
+}
+.search-hamburger .search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search i {
+  font-size: 1.5rem;
+}
+.hamburger-menu {
+  width: 32px;
+  height: 32px;
+  position: relative;
+  border: none;
+  background: transparent;
+}
+
+.hamburger-menu .hamburger-btn,
+.hamburger-menu .hamburger-btn::after,
+.hamburger-menu .hamburger-btn::before {
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background-color: white;
+}
+
+.hamburger-menu .hamburger-btn::after,
+.hamburger-menu .hamburger-btn::before {
+  content: "";
+}
+
+.hamburger-menu .hamburger-btn::before {
+  transform: translate(-12px, 12px);
+}
+
+.hamburger-menu .hamburger-btn::after {
+  transform: translate(-12px, -12px);
 }
