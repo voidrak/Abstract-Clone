@@ -18,23 +18,28 @@ body {
 header {
   background-color: var(--BLACK);
   color: var(--WHITE);
-  padding: 1.5rem;
+  /* width: 100%;
+  width: 100%; */
 }
 header .container {
   display: flex;
   justify-content: space-between;
+  padding: 1.5rem 0;
+  margin-left: 5px;
 }
 .logo-help {
   display: flex;
   column-gap: 1rem;
+  margin-top: 5px;
 }
-.abstract-logo {
-}
+
 .help-center {
-  border-left: 2px solid white;
-  padding: 0 0 0 5px;
+  height: 30px;
+  transform: translateX(-10px);
 }
 .help-center h1 {
+  border-left: 3px solid white;
+  padding: 0 0 0 5px;
   font-size: 24px;
   font-weight: 400;
   white-space: nowrap;
@@ -42,6 +47,7 @@ header .container {
 .abstract-logo {
   width: 126px;
   height: 32px;
+  margin-left: 5px;
 }
 .search-hamburger {
   display: flex;
@@ -51,22 +57,28 @@ header .container {
   justify-content: center;
   align-items: center;
 }
+.search {
+  margin-right: 10px;
+}
 .search i {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
+  font-weight: 700;
+  padding: 4px;
 }
 .hamburger-menu {
-  width: 32px;
-  height: 32px;
   position: relative;
+  width: 42px;
+  height: 42px;
   border: none;
   background: transparent;
+  /* margin-left: 1em; */
 }
 
 .hamburger-menu .hamburger-btn,
 .hamburger-menu .hamburger-btn::after,
 .hamburger-menu .hamburger-btn::before {
   position: absolute;
-  width: 24px;
+  width: 23px;
   height: 2px;
   background-color: white;
 }
@@ -77,9 +89,9 @@ header .container {
 }
 
 .hamburger-menu .hamburger-btn::before {
-  transform: translate(-12px, 12px);
+  transform: translate(-12px, 8px);
 }
 
 .hamburger-menu .hamburger-btn::after {
-  transform: translate(-12px, -12px);
+  transform: translate(-12px, -8px);
 }
