@@ -41,8 +41,9 @@ header .container {
   border-left: 3px solid white;
   padding: 0 0 0 5px;
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 600;
   white-space: nowrap;
+  /* transform: translateY(5px); */
 }
 .abstract-logo {
   width: 126px;
@@ -94,4 +95,60 @@ header .container {
 
 .hamburger-menu .hamburger-btn::after {
   transform: translate(-12px, -8px);
+}
+.submit-sign {
+  border-top: 1px solid var(--WHITE);
+  padding: 4em 0;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.submit-sign .divider {
+  width: 50%;
+  height: 1px;
+  background-color: white;
+  margin: 1rem 0;
+}
+.submit-sign h2 {
+  font-weight: 550;
+}
+.submit-sign {
+  display: none;
+}
+.clicked .hamburger-btn::after {
+  transform: rotate(-45deg);
+}
+.clicked .hamburger-btn::before {
+  transform: rotate(45deg);
+}
+.clicked .hamburger-btn {
+  background: transparent;
+}
+.clicked .submit-sign {
+  display: flex;
+}
+.search-hidden {
+  height: 90px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--WHITE);
+  border-bottom: 1px solid var(--BLUE-ACCENT);
+  /* display: none; */
+}
+.search-hidden input {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 90%;
+  height: 60%;
+  padding: 10px 20px 10px 16px;
+}
+.search-hidden input::placeholder {
+  font-size: 20px;
+}
+.search-hidden i {
+  margin-left: 0.5em;
+  color: black;
+  font-size: 25px;
+  font-weight: 700;
 }
