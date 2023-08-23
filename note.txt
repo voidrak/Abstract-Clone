@@ -1,3 +1,5 @@
 min-width:992px -> for header
 
+min-width: 769px -> for margin in the left and right 
+
 add media query for margin in the left and right

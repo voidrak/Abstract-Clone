@@ -31,6 +31,7 @@ header .container {
   display: flex;
   column-gap: 1rem;
   margin-top: 5px;
+  margin-left: 1em;
 }
 
 .help-center {
@@ -72,6 +73,13 @@ header .container {
   height: 42px;
   border: none;
   background: transparent;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  /* outline: 2px solid red; */
+  margin-right: 1em;
+
   /* margin-left: 1em; */
 }
 
@@ -91,6 +99,8 @@ header .container {
 
 .hamburger-menu .hamburger-btn::before {
   transform: translate(-12px, 8px);
+  align-self: center;
+  justify-self: center;
 }
 
 .hamburger-menu .hamburger-btn::after {
@@ -116,10 +126,10 @@ header .container {
   display: none;
 }
 .clicked .hamburger-btn::after {
-  transform: rotate(-45deg);
+  transform: translateX(-10px) rotate(-45deg);
 }
 .clicked .hamburger-btn::before {
-  transform: rotate(45deg);
+  transform: translateX(-10px) rotate(45deg);
 }
 .clicked .hamburger-btn {
   background: transparent;
@@ -141,7 +151,7 @@ header .container {
   border-radius: 5px;
   width: 90%;
   height: 60%;
-  padding: 10px 20px 10px 16px;
+  padding: 10px 10px 10px 16px;
 }
 .search-hidden input::placeholder {
   font-size: 20px;
@@ -151,4 +161,17 @@ header .container {
   color: black;
   font-size: 25px;
   font-weight: 700;
+}
+
+/* MEDIA QUERY */
+
+@media screen and (min-width: 769px) {
+  header .container {
+    margin: 0 2.3em;
+  }
+}
+@media screen and (min-width: 992px) {
+  header .container {
+    margin: 0 2.3em;
+  }
 }
