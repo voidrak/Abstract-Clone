@@ -15,6 +15,10 @@
 body {
   width: 100%;
 }
+a:any-link {
+  text-decoration: none;
+  color: inherit;
+}
 header {
   background-color: var(--BLACK);
   color: var(--WHITE);
@@ -162,16 +166,63 @@ header .container {
   font-size: 25px;
   font-weight: 700;
 }
+.desk-header {
+  display: none;
+}
 
 /* MEDIA QUERY */
+
+/* min-width: 769px  */
 
 @media screen and (min-width: 769px) {
   header .container {
     margin: 0 2.3em;
   }
 }
-@media screen and (min-width: 992px) {
+
+/* min-width:992px  */
+
+@media screen and (min-width: 1200px) {
+  .search-hamburger {
+    display: none;
+  }
   header .container {
-    margin: 0 2.3em;
+    margin: 0 3em;
+    max-height: 88px;
+    justify-content: space-around;
+    column-gap: 5rem;
+  }
+  .desk-header {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+  }
+  .desk-header input {
+    border: 1px solid black;
+    border-radius: 7px;
+    width: 265px;
+    height: 53px;
+    padding: 15px 10px 10px 16px;
+  }
+  .desk-header input::placeholder {
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
+  .desk-header .submit {
+    border: 1px solid var(--WHITE);
+    border-radius: 9px;
+    padding: 0.6rem 25px 0.6rem 25px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    white-space: nowrap;
+  }
+  .desk-header .sign {
+    padding: 0.7rem 20px 0.75rem 20px;
+    background-color: var(--BLUE-ACCENT);
+    border-radius: 7px;
+    padding: 0.6rem 40px 0.6rem 40px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    white-space: nowrap;
   }
 }
