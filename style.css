@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  /* outline: 2px solid red; */
 }
 :root {
   --BLUE-ACCENT: #4c5fd5;
@@ -13,7 +14,7 @@
   --WHITE: #fff;
 }
 body {
-  width: 100%;
+  width: 100vw;
 }
 a:any-link {
   text-decoration: none;
@@ -81,8 +82,7 @@ header .container {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  /* outline: 2px solid red; */
-  margin-right: 1em;
+  /* margin-right: 1em; */
 
   /* margin-left: 1em; */
 }
@@ -171,6 +171,18 @@ header .container {
 }
 
 /* MEDIA QUERY */
+
+@media screen and (max-width: 391px) {
+  .help-center h1 {
+    border-left: 3px solid white;
+    padding: 0 0 0 5px;
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    white-space: nowrap;
+    /* transform: translateY(5px); */
+  }
+}
 
 /* min-width: 769px  */
 
