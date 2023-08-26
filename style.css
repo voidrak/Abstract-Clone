@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -9,9 +8,10 @@
 }
 :root {
   --BLUE-ACCENT: #4c5fd5;
-  --WHITE-ACCENT: #dadbf1;
+  --WHITE-BLUE: #dadbf1;
   --BLACK: #000000;
   --WHITE: #fff;
+  --FONT-Poppins: "Poppins", sans-serif;
 }
 body {
   width: 100vw;
@@ -184,11 +184,65 @@ header .container {
   }
 }
 
+.top-main {
+  background-color: var(--WHITE-BLUE);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 350px;
+}
+.top-main h1 {
+  font-size: 2.5rem;
+  letter-spacing: -3px;
+  font-weight: 400;
+  margin: 0 0 50px 0;
+}
+.top-main .input {
+  width: 90%;
+  max-width: 720px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--BLACK);
+  border-radius: 5px;
+  background-color: var(--WHITE);
+  margin-bottom: 10px;
+}
+.input input::placeholder {
+  font-size: 20px;
+}
+.top-main .input input {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  width: 80%;
+  height: 65px;
+  padding: 10px 10px 10px 16px;
+  font-size: 20px;
+}
+.top-main .input .arrow-svg {
+  width: 40px;
+  height: 40px;
+}
+
 /* min-width: 769px  */
 
 @media screen and (min-width: 769px) {
   header .container {
     margin: 0 2.3em;
+  }
+}
+@media screen and (min-width: 500px) {
+  .top-main h1 {
+    font-size: 4rem;
+  }
+}
+@media screen and (min-width: 769px) {
+  .top-main h1 {
+    font-size: 4.5rem;
+    margin: 0 0 30px 0;
   }
 }
 
