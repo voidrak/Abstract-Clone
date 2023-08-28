@@ -83,7 +83,7 @@ header .container {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  /* margin-right: 1em; */
+  /* margin-right: 2em; */
 
   /* margin-left: 1em; */
 }
@@ -245,6 +245,9 @@ header .container {
     font-weight: 600;
     white-space: nowrap;
     /* transform: translateY(5px); */
+  }
+  .search {
+    margin-right: 0;
   }
 }
 
