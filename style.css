@@ -234,6 +234,38 @@ header .container {
   font-size: 14px;
 }
 
+.list-container {
+  margin-top: 6rem;
+  display: grid;
+  /* grid-template-columns: ; */
+  place-content: center;
+}
+.list-container .sub-list {
+  display: flex;
+  margin: 0 1rem;
+  margin-bottom: 3rem;
+}
+.list-container .sub-list .img-icon {
+  margin-right: 1rem;
+}
+.list-container .sub-list img {
+  width: 15vw;
+  aspect-ratio: 1/1;
+}
+
+.list-container .sub-list h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.list-container .sub-list p {
+  font-weight: 600;
+  margin: 1rem 0;
+}
+.list-container .sub-list a {
+  color: var(--BLUE-ACCENT);
+}
+
 /* MEDIA QUERY */
 
 @media screen and (max-width: 391px) {
