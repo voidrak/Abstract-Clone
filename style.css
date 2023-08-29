@@ -225,6 +225,7 @@ header .container {
 }
 .help-sticky h3 {
   display: none;
+  color: white;
 }
 .help-sticky i {
   border: 2px solid var(--WHITE);
@@ -312,6 +313,7 @@ header .container {
     justify-content: center;
     align-items: center;
     left: 85%;
+    padding: 1.2rem;
   }
   .help-sticky h3 {
     display: block;
