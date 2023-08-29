@@ -373,19 +373,24 @@ header .container {
       white-space: nowrap;
     }
 
+    .list-container {
+      margin-right: 6rem;
+      margin-left: 6rem;
+    }
     .list-container .sub-list {
-      max-width: 600px;
+      max-width: 550px;
     }
 
     .list-container .sub-list p {
-      font-weight: 500;
-      font-size: 20px;
+      font-weight: 400;
+      font-size: 24px;
     }
+
     .list-container .sub-list:last-child {
-      margin-right: 20rem;
+      margin-right: 12rem;
     }
     .list-container .sub-list:nth-last-child(3) {
-      margin-right: 10rem;
+      /* margin-right: 10rem; */
       /* background-color: red; */
     }
   }
