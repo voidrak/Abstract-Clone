@@ -295,16 +295,25 @@ footer {
 }
 .sub-links li {
   margin-top: 0.5rem;
+  font-size: 17px;
+}
+.sub-links h3 {
+  font-size: 25px;
+}
+.footer-container h6 {
+  font-size: 14px;
 }
 .footer-container h4 {
   margin-top: 2rem;
   margin-bottom: 0.5rem;
+  font-size: 20px;
 }
 .copyright {
   padding-bottom: 1rem;
 }
 .copyright p {
   padding: 0.3rem 0;
+  font-size: 20px;
 }
 
 /* MEDIA QUERY */
@@ -366,84 +375,121 @@ footer {
   .list-container .sub-list {
     max-width: 350px;
   }
-
 }
-  @media screen and (min-width: 621px) and (max-width: 768px) {
-    .footer-container {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      position: relative;
-    }
-    .copyright{
-      
-      position: absolute;
-      bottom: 0;
-      right: 90px;
+@media screen and (min-width: 621px) and (max-width: 768px) {
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+  }
+  .copyright {
+    position: absolute;
+    bottom: 0;
+    right: 90px;
+  }
+}
 
-    }
+@media screen and (min-width: 769px) and (max-width: 990px) {
+  .footer-container {
+    margin-left: 3rem;
+  }
+  .copyright {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .links-container {
+    display: grid;
+    margin-left: 5vw;
+
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .footer-container {
+    display: flex;
+    flex-wrap: nowrap;
   }
 
-  /* min-width:992px  */
-
-  @media screen and (min-width: 1200px) {
-    .search-hamburger {
-      display: none;
-    }
-    header .container {
-      margin: 0 3em;
-      max-height: 88px;
-      justify-content: space-around;
-      column-gap: 5rem;
-    }
-    .desk-header {
-      display: flex;
-      align-items: center;
-      column-gap: 15px;
-    }
-    .desk-header input {
-      border: 1px solid black;
-      border-radius: 7px;
-      width: 265px;
-      height: 53px;
-      padding: 15px 10px 10px 16px;
-    }
-    .desk-header input::placeholder {
-      font-size: 1.3rem;
-      font-weight: 400;
-    }
-    .desk-header .submit {
-      border: 1px solid var(--WHITE);
-      border-radius: 9px;
-      padding: 0.6rem 25px 0.6rem 25px;
-      font-size: 1.5rem;
-      font-weight: 400;
-      white-space: nowrap;
-    }
-    .desk-header .sign {
-      padding: 0.7rem 20px 0.75rem 20px;
-      background-color: var(--BLUE-ACCENT);
-      border-radius: 7px;
-      padding: 0.6rem 40px 0.6rem 40px;
-      font-size: 1.5rem;
-      font-weight: 400;
-      white-space: nowrap;
-    }
-
-    .list-container {
-      margin-right: 6rem;
-      margin-left: 6rem;
-    }
-    .list-container .sub-list {
-      max-width: 550px;
-    }
-
-    .list-container .sub-list p {
-      font-weight: 400;
-      font-size: 24px;
-    }
-
-    .list-container .sub-list:last-child {
-      margin-right: 12rem;
-    }
+  .copyright {
+    margin-left: 5rem;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: -5rem;
   }
+  .help-sticky {
+    left: 90%;
+  }
+}
+
+/* min-width:992px  */
+
+@media screen and (min-width: 1200px) {
+  .search-hamburger {
+    display: none;
+  }
+  header .container {
+    margin: 0 3em;
+    max-height: 88px;
+    justify-content: space-around;
+    column-gap: 5rem;
+  }
+  .desk-header {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+  }
+  .desk-header input {
+    border: 1px solid black;
+    border-radius: 7px;
+    width: 265px;
+    height: 53px;
+    padding: 15px 10px 10px 16px;
+  }
+  .desk-header input::placeholder {
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
+  .desk-header .submit {
+    border: 1px solid var(--WHITE);
+    border-radius: 9px;
+    padding: 0.6rem 25px 0.6rem 25px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    white-space: nowrap;
+  }
+  .desk-header .sign {
+    padding: 0.7rem 20px 0.75rem 20px;
+    background-color: var(--BLUE-ACCENT);
+    border-radius: 7px;
+    padding: 0.6rem 40px 0.6rem 40px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    white-space: nowrap;
+  }
+
+  .list-container {
+    padding-right: 6rem;
+    padding-left: 6rem;
+  }
+  .list-container .sub-list {
+    max-width: 550px;
+  }
+
+  .list-container .sub-list p {
+    font-weight: 400;
+    font-size: 24px;
+  }
+
+  .list-container .sub-list:last-child {
+    margin-right: 12rem;
+  }
+  .links-container > :not(:last-child) {
+    margin-right: 10vw;
+  }
+
+  /* .sub-links {
+    margin-right: 10vw;
+  } */
 }
