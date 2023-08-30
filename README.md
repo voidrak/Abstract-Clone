@@ -4,7 +4,7 @@
 
 <p id="description">I've built a cool website that's actually a clone of a popular one called "Abstract." I took the help center page from the original site and recreated it as a project which I found on a website called Frontend Practice. I put a lot of effort into making it look and work just like the original so when you visit my version you'll get the same helpful and user-friendly experience. It's a fun project that I'm proud of!</p>
 
-<p> You can access the clone I built using the following link <a href="https://help.abstract.com/hc/en-us#h5o-7" target="_blank" rel="noopener noreferrer">click here </a></P>
+<p> You can access the clone I built using the following link <a href="https://abstract-clone-woad.vercel.app/" target="_blank" rel="noopener noreferrer">click here </a></P>
 <p>Here the the links for original page <a href="https://help.abstract.com/hc/en-us#h5o-7" target="_blank" rel="noopener noreferrer">click here</a></P>
 
 
